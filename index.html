@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="main-container">
+      
+      <!-- LEFT SIDE -->
+      <div class="image-container">
+        <div class="container1">
+          <img src="doug-bagg-QDgvPd8xT10-unsplash.jpg" alt="Fern leaves" class="background-image">
+          <div class="container2"> 
+            <img src="odin-lined.png" alt="Odin Logo" class="logo">
+            <p>ODIN</p>
+          </div>
+        </div>
+      </div>   
+
+      <!-- RIGHT SIDE -->
+      <div class="right-container">
+        
+        <!-- Top Article -->
+        <div class="article-container">
+          <h2>Hello, Gooners! You know you need something.<br>Sign up <em>now</em> to get started.</h2>
+          <br><br>
+          <h2>You <em>know</em> you want to.</h2>
+        </div>
+
+        <!-- Middle Form -->
+        <div class="form-container">
+          <h2>Let's do this!</h2>
+          <form action="/submit" method="POST">
+            
+            <div class="input-group">
+              <label for="firstname">FIRST NAME</label>
+              <input type="text" id="firstname" name="firstname" value="Thor">
+            </div>
+
+            <div class="input-group">
+              <label for="lastname">LAST NAME</label>
+              <input type="text" id="lastname" name="lastname" value="Odinson">
+            </div>
+
+            <div class="input-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="input-group">
+              <label for="phonenumber">PHONE NUMBER</label>
+              <input type="tel" id="phonenumber" name="phonenumber">
+            </div>
+
+            <div class="input-group">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </div>
+
+            <div class="input-group">
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Bottom Create Account -->
+        <div class="create-account">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="/login">Log in</a></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
